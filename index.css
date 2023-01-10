@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,0.2556372890953257) 0%, rgba(64,224,208,1) 100%);
+}
+
+.container{
+    padding: 2em;
+}
+
+.header_and_paragraph_container{
+    padding: 2em;
+}
+
+.header_paragraph_and_review_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_header{
+    font-family: 'League Spartan', sans-serif;
+    max-width: 10em;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    font-size: 3.5em;
+    text-shadow: 2px 4px 0px rgba(255, 255, 0, 0.43);
+}
+
+.main_paragraph{
+    font-family: 'League Spartan', sans-serif;
+    max-width: 30em;
+    font-weight: 400;
+    margin-top: 2em;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px rgba(64, 224, 208, 1);
+}
+
+.review_paragraph{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.big_review_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2em;
+}
+
+.star{
+    height: 1em;
+    width: 1em;
+    transition: 0.5 ease;
+}
+
+.star:hover{
+    transform: scale(1.5);
+}
+
+.stars{
+    display: flex;
+    gap: 0.5em;
+}
+
+.review_container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    gap: 1em;
+    background-color: var(--light-grayish-magenta);
+    padding: 1em;
+    transform: translate(0em, 1em);
+    box-shadow: 7px 6px 24px -11px rgba(0, 0, 0, 1);
+}
+
+.review_container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    gap: 1em;
+    background-color: var(--light-grayish-magenta);
+    padding: 1em;
+    transform: translate(1em, 2em);
+    box-shadow: 7px 6px 24px -11px rgba(0, 0, 0, 1);
+}
+
+.review_container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    gap: 1em;
+    background-color: var(--light-grayish-magenta);
+    padding: 1em;
+    transform: translate(2em, 3em);
+    box-shadow: 7px 6px 24px -11px rgba(0, 0, 0, 1);
+}
+
+.big_client_container{
+    display: flex;
+    grid-gap: 10px;
+    color: var(--white);
+    padding: 2em;
+}
+
+.client_container1{
+    background-color: var(--very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 1em;
+    transform: translate(0em, 1em);
+    box-shadow: 7px 6px 24px -11px rgba(0, 0, 0, 1);
+}
+
+
+.client_container2{
+    background-color: var(--very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 1em;
+    transform: translate(1em, 2em);
+    box-shadow: 7px 6px 24px -11px rgba(0, 0, 0, 1);
+}
+
+.client_container3{
+    background-color: var(--very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 1em;
+    transform: translate(2em, 3em);
+    box-shadow: 7px 6px 24px -11px rgba(0, 0, 0, 1);
+}
+
+.client_photo{
+    max-width: 3em;
+    max-height: 3em;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.client_photo:hover{
+    transform: rotate(360deg);
+}
+
+.client{
+    display: flex;
+    gap: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.name p:nth-child(even){
+    color: var(--soft-pink)
+}
+
+.client_comment{
+    margin-top: 2em;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    padding-bottom: 1em;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 2em;
+    color: var(--white);
+    text-shadow: 4px 5px 11px rgba(0, 0, 0, 1);
+}
+
+.attribution a{
+    margin-left: 4px;
+    color: var(--white);
+    transition: 0.5s ease;
+}
+
+.attribution a:hover{
+    color: black;
+}
+
+@media (max-width: 650px){
+
+    .attribution{
+        top: 0em;
+    }
+
+    .big_review_container{
+        flex-direction: column;
+    }
+
+    .header_and_paragraph_container{
+        text-align: center;
+    }
+
+    .big_client_container{
+        flex-direction: column;
+    }
+
+    .header_paragraph_and_review_container{
+        flex-direction: column;
+    }
+
+    .review_container1{
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(0);
+    }
+
+    .review_container2{
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(0);
+    }
+
+    .review_container3{
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(0);
+    }
+
+    .client_container1{
+        transform: translate(0);
+    }
+
+    .client_container2{
+        transform: translate(0);
+    }
+
+    .client_container3{
+        transform: translate(0);
+    }
+}
